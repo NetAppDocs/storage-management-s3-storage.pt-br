@@ -1,0 +1,31 @@
+---
+indexpage:
+  title: Documentação de armazenamento do Amazon S3
+  summary: Comece a usar o armazenamento do Amazon S3 com o NetApp Console.
+  keywords: amazon s3, storage, bluexp, netapp console
+  lead: Comece a usar o armazenamento do Amazon S3 com o NetApp Console.
+  tiles:
+  - title: Começar
+    links:
+    - title: Visualize seus buckets do Amazon S3
+      url: task-viewing-amazon-s3.html
+  - title: Gerenciar buckets S3
+    links:
+    - title: Adicionar buckets S3
+      url: task-add-s3-bucket.html
+    - title: Alterar configurações do bucket
+      url: task-change-s3-bucket-settings.html
+    - title: Use serviços de dados NetApp com buckets S3
+      url: task-s3-enable-data-services.html
+  - title: Mais informações
+    links:
+    - title: Documentação do Amazon S3 para gerenciamento fora do NetApp Console
+      url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html
+  - title: Blogs e comunidade
+    links:
+    - title: Console NetApp
+      url: https://www.netapp.com/console
+    - title: Serviços de dados NetApp
+      url: https://www.netapp.com/data-services/
+    - title: Comunidade NetApp
+      url: https://community.netapp.com/

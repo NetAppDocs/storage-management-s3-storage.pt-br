@@ -1,0 +1,11 @@
+= Capacidade de adicionar novos buckets do BlueXP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+
+
+=== Capacidade de adicionar novos buckets do BlueXP
+
+Já faz algum tempo que você consegue visualizar os buckets do Amazon S3 no BlueXP Canvas.  Agora você pode adicionar novos buckets e alterar propriedades de buckets existentes diretamente do BlueXP. https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["Veja como adicionar novos buckets do Amazon S3"] .

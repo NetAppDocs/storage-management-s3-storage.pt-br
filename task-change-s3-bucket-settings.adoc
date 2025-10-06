@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: task-change-s3-bucket-settings.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: Quando o sistema Amazon S3 estiver disponível na página Sistemas, você poderá alterar algumas propriedades do bucket diretamente do NetApp Console. 
+---
+= Alterar as configurações do bucket S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando o sistema Amazon S3 estiver disponível na página Sistemas, você poderá alterar algumas propriedades do bucket diretamente do NetApp Console.
+
+Observe que você não pode alterar o nome do bucket, a conta da AWS, a região ou a configuração de bloqueio de objeto.
+
+As propriedades do bucket que você pode alterar incluem:
+
+* Se o controle de versão está habilitado ou desabilitado para todos os objetos no bucket.
+* Você pode optar por aplicar tags aos objetos adicionados ao bucket.
+* Se novos objetos adicionados ao bucket são criptografados ou não e a opção usada para criptografia.
+
+
+Você pode alterar essas configurações de bucket diretamente clicando emimage:button-horizontal-more.gif["o botão de três pontos a mais"] para um balde.
+
+image:screenshot-edit-amazon-s3-bucket.png["Uma captura de tela mostrando como selecionar o botão Detalhes do gerente para editar as propriedades do bucket."]
+
+
+
+== Alterar a configuração de controle de versão
+
+O controle de versão permite que você mantenha várias versões de um objeto em um bucket para que você possa restaurar objetos que foram excluídos ou substituídos acidentalmente.  Você pode alterar a configuração de controle de versão para objetos futuros quando eles forem adicionados ao bucket.  Alterar a configuração de controle de versão não altera o valor dos objetos existentes.
+
+O controle de versão é desabilitado por padrão em novos buckets, a menos que você tenha habilitado o Bloqueio de Objeto ao criar o bucket. https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html["Saiba mais sobre controle de versão na documentação do Amazon S3"^] .
+
+Quando ativado, se você quiser interromper o controle de versão temporariamente ou permanentemente, poderá escolher o estado "Suspenso".  Não é possível desabilitar o controle de versão depois que ele foi habilitado.
+
+image:screenshot-amazon-s3-versioning.png["Uma captura de tela mostrando como alterar a configuração de controle de versão de um bucket."]
+
+
+
+== Adicionar ou alterar tags para objetos no bucket
+
+Tags são metadados que você pode usar para agrupar recursos para identificar aplicativos, ambientes, regiões, provedores de nuvem e muito mais.  As tags consistem em uma chave de tag e um valor de tag.  Você pode adicionar tags a um bucket para que elas sejam aplicadas aos objetos quando eles forem adicionados ao bucket.  Você também pode alterar e excluir tags e valores de tags.
+
+As tags são desabilitadas por padrão em novos buckets criados pelo NetApp Console. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["Saiba mais sobre marcação na documentação do Amazon S3"^] .
+
+image:screenshot-amazon-s3-tags.png["Uma captura de tela mostrando como adicionar um novo par de chave/valor de tag para um bucket."]
+
+Depois de adicionar uma tag, clique em *Aplicar* para salvar suas alterações.  Se você quiser adicionar mais tags, clique em *Adicionar nova tag*.  Você pode adicionar até 10 tags por bucket.
+
+
+
+== Alterar a configuração de criptografia
+
+A criptografia do lado do servidor permite criptografar dados no destino do Amazon S3.  O Amazon S3 criptografa seus dados no nível do objeto à medida que os grava no disco e os descriptografa para você quando você os acessa.  Você pode alterar a configuração de criptografia usada para objetos futuros quando eles forem adicionados ao bucket.
+
+A criptografia é habilitada por padrão usando "Chaves gerenciadas pelo Amazon S3 (SSE-S3)" em novos buckets criados pelo NetApp Console. https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["Saiba mais sobre criptografia do lado do servidor na documentação do Amazon S3"^] .
+
+Como alternativa, você pode optar por habilitar a criptografia usando a "chave do AWS Key Management Service (SSE-KMS)".  A criptografia também é possível usando suas próprias chaves fornecidas pelo cliente (SSE-C), mas essa funcionalidade não está disponível na interface do console. Você deve usar a interface da Amazon.
+
+image:screenshot-amazon-s3-encryption1.png["Uma captura de tela mostrando como alterar o tipo de chave de criptografia usada para um bucket."]
+
+Se você escolher "Chave do AWS Key Management Service (SSE-KMS)", poderá escolher uma chave do AWS KMS que você já criou ou poderá usar um ARN (Amazon Resource Name) de chave do AWS KMS.
+
+image:screenshot-amazon-s3-encryption2.png["Uma captura de tela mostrando como selecionar configurações alternativas de criptografia para um bucket."]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html["Saiba mais sobre o AWS Key Management Service na documentação do Amazon S3"^]e sobre https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt["usando chaves do cliente versus chaves da AWS"^] .

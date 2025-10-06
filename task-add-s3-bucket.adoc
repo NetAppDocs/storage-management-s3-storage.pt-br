@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task-add-s3-bucket.html 
+keywords: s3 buckets, s3 storage, s3 working environment, s3 system, amazon s3 buckets, amazon s3 working environment, amazon s3 system, netapp console 
+summary: Quando o sistema Amazon S3 estiver disponível na página Sistemas, você poderá adicionar buckets adicionais diretamente do NetApp Console. 
+---
+= Adicionar buckets S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando o sistema Amazon S3 estiver disponível na página _Sistemas_, você poderá adicionar buckets adicionais diretamente do NetApp Console.
+
+.Passos
+. Na página _Sistemas_, clique duas vezes no sistema Amazon S3 para visualizar a página _Visão geral dos buckets do Amazon S3_ e clique em *Adicionar bucket*.
++
+A página _Adicionar bucket_ é exibida.
+
+. Na página _Adicionar bucket_, insira as informações necessárias para criar o bucket e clique em *Aplicar*.
++
+.. Digite o nome que você deseja usar para o bucket.
+.. Selecione a conta da AWS que será a proprietária do bucket.  Esta pode ser a conta principal onde o agente do Console foi implantado ou pode ser uma https://docs.netapp.com/us-en/console-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["conta diferente que você adicionou ao NetApp Console"^] .
+.. Selecione a região da AWS onde o bucket será criado.
+.. Opcionalmente, você pode habilitar o bloqueio de objetos do S3 no bucket para armazenar objetos usando um modelo WORM (write-once-read-many).  Se você planeja usar o bloqueio de objetos, deverá habilitá-lo ao criar o bucket.  Habilitar o Bloqueio de Objeto também habilita o Controle de Versão. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Saiba mais sobre bloqueio de objetos na documentação do Amazon S3"^] .
++
+O balde é criado.
+
+
+
+
+
+.O que vem a seguir
+Não é possível configurar manualmente o controle de versão, as tags ou a criptografia ao adicionar um bucket inicialmente.  Depois que o bucket for criado, você poderá configurar essas outras propriedades do bucket. link:task-change-s3-bucket-settings.html["Saiba mais sobre como alterar as configurações do bucket"] .
