@@ -45,7 +45,7 @@ image:screenshot-amazon-s3-versioning.png["Uma captura de tela mostrando como al
 
 == Adicionar ou alterar tags para objetos no bucket
 
-Tags são metadados que você pode usar para agrupar recursos para identificar aplicativos, ambientes, regiões, provedores de nuvem e muito mais.  As tags consistem em uma chave de tag e um valor de tag.  Você pode adicionar tags a um bucket para que elas sejam aplicadas aos objetos quando eles forem adicionados ao bucket.  Você também pode alterar e excluir tags e valores de tags.
+Tags são metadados que você pode usar para agrupar recursos para identificar aplicativos, ambientes, regiões, provedores de nuvem e muito mais. As tags consistem em uma chave de tag e um valor de tag.  Você pode adicionar tags a um bucket para que elas sejam aplicadas aos objetos quando eles forem adicionados ao bucket.  Você também pode alterar e excluir tags e valores de tags.
 
 As tags são desabilitadas por padrão em novos buckets criados pelo NetApp Console. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["Saiba mais sobre marcação na documentação do Amazon S3"^] .
 

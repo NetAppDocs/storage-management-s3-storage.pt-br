@@ -23,9 +23,9 @@ indexpage:
       url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html
   - title: Blogs e comunidade
     links:
-    - title: Console NetApp
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: Serviços de dados NetApp
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: Comunidade NetApp
       url: https://community.netapp.com/
