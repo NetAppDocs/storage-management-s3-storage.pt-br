@@ -180,7 +180,6 @@
   <block id="bbbf425db446e9a18580c235b40f3a05" category="list-text">Use a * NetApp Data Classification* para verificar seus buckets S3 em busca de dados pessoais e confidenciais.  A NetApp Data Classification pode verificar qualquer bucket na conta, independentemente de ele ter sido criado para uma solução NetApp .</block>
   <block id="afc327ef29f55ac158f97fd2e57c9bcd" category="paragraph">Para começar, selecione seu sistema Amazon S3 e selecione a opção apropriada na seção *Classificação* do painel Serviços para iniciar a verificação dos seus buckets S3.</block>
   <block id="326e2eb5669e5433c61a5000c39008d4" category="inline-link">Saiba mais sobre o serviço de NetApp Data Classification</block>
-  <block id="e3cfe46184136fb25370ea007876c8ec" category="paragraph"><block ref="3509d5b138f91922d82b75e7cae94ee0" category="inline-link-rx"></block> .</block>
   <block id="6269943bbab503c57445a47b04897eaa" category="summary">Antes de abrir um caso de suporte com o suporte técnico da NetApp , você precisa adicionar uma conta do Site de Suporte da NetApp ao NetApp Console e depois se registrar para obter suporte.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Registre-se para obter suporte</block>
   <block id="24904df7e9008c61d33694a1bc30ed71" category="summary">Depois de instalar um agente do Console na AWS, o NetApp Console pode descobrir automaticamente informações sobre os buckets do Amazon S3 que residem na conta da AWS onde o agente do Console está instalado.  Um sistema Amazon S3 é adicionado à página Sistemas para que você possa visualizar essas informações.</block>
@@ -219,4 +218,5 @@
   <block id="548428f3d8d7f88cdab312aeb124539b" category="sidebar">Documentação de armazenamento do Amazon S3</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notas de lançamento</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e suporte</block>
+  <block id="38e4a6ea124be3ae85f0c5c913bd80a7" category="paragraph"><block ref="b2391610bf85b5dbfe9880f4b5f5c77d" category="inline-link-rx"></block>.</block>
 </blocks>

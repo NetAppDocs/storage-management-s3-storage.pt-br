@@ -6,6 +6,8 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  release_notes_autogen:
+    release_notes_repo: console-relnotes
   rss_page: whats-new.html
   langs: pt-br,us-en,de-de,es-es,fr-fr,it-it,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
